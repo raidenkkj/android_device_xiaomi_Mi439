@@ -18,9 +18,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_ENABLE_BLUR := true
 
-# GApps build stuff.
-TARGET_USES_MINI_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
+# Vanill build stuff.
+CHERISH_VANILLA := true
 
 # Maintainer Stuff
 CHERISH_BUILD_TYPE := OFFICIAL
