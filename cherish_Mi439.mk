@@ -18,10 +18,16 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_ENABLE_BLUR := true
 
-# Vanill build stuff.
+# Vanilla build stuff.
 CHERISH_VANILLA := true
 
-# Maintainer Stuff
+# Additional stuff
+SELINUX_IGNORE_NEVERALLOWS =: true
+ALLOW_MISSING_DEPENDENCIES =: true
+RELAX_USES_LIBRARY_CHECK =: true
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES =: true
+
+# Maintainer stuff.
 CHERISH_BUILD_TYPE := OFFICIAL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=RaidenIshigami
